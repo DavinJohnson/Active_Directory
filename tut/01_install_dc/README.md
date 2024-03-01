@@ -10,4 +10,10 @@
 In PowerShell use command
 Install-WindowsFeature AD-Domain-Services -IncludeManagement
 
+Get-NetIPAddress
+
+#Joining the domain through the Workstation
+
+Add-Computer -Domainname xyz.com -Credential xyz\Administrator -Force -Restart
+
 Make sure when using Terminal it is running in Administrator Mode.
